@@ -1,0 +1,38 @@
+#Q1. Write the names of countries in capital and in a new line.
+c = ("india,china,bhutan,russia")
+k =c.split(",")
+for i in k:
+ print(i.title())
+ 
+ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ #Q2.Find those cities which ends with 'pur' in a list.
+ c = "gwalior,jaipur,raipur,udaipur,pune,mumbai"
+ k=c.split(",")
+ for i in k:
+  if(i.endswith("pur")):
+    print(i)
+    
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Q3.find the total of the drinks given in a string.
+d ="sprite,25;fanta,40;frooti,10;mazza,20"
+k=(d.split(";"))
+print(k)
+total=0
+for i in k:
+  s=i.split(",")
+  total = total + int(s[1])
+print("Total ",total)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Q4.Count total numbers of characters and words in a given sentence.
+p = "python is an object oriented language and is platform independent scripting"
+print("total characters are ",len(p))
+print("total words are ",p.count(' ')+1)
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Q5.Print those words which have the letter 'O' in them.
+p = "python is an object oriented language and is platform independent scripting"
+s =p.split(" ")
+for j in s:
+  if ('o' in j or 'O' in j):
+    print(j)
